@@ -6,7 +6,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Project Page Template</title>
+  <title>Project Page </title>
 
   <link href="./assets/bootstrap.min.css" rel="stylesheet">
   <link href="./assets/font.css" rel="stylesheet" type="text/css">
@@ -14,7 +14,7 @@
 </head>
 <!-- === Header Ends === -->
 
-
+<!-- ======================================== content ========================================== -->
 <div class="section">
   <div class="header">
     <div class="logo">
@@ -26,18 +26,75 @@
 </div>
 
   <class="staffshortcut">
- <A HREF="#PanGAN">PanGAN:An unsupervised learning method for pan-sharpening in remote sensing image fusion using a generative adversarial network</A> 
-<br />
-<br />
- <A HREF="#FusionGAN">FusionGAN: A generative adversarial network for infrared and visible image fusion</A> 
-<br />
+    <A HREF="#Sky">Sky Transfer</A> 
+    <br />
+    <br />
+   
+    <A HREF="#PanGAN">PanGAN:An unsupervised learning method for pan-sharpening in remote sensing image fusion using a generative adversarial network</A> 
+   <br />
+   <br />
+   
+    <A HREF="#FocalGAN">Simultaneous Brain Anatomical and Arterial Imaging by 3T MRI: Reconstruction Based on a Generative Adversarial Network</A> 
+   <br />
+   <br />
+   
+   <A HREF="#Denoise">MRI and CT Denoise</A> 
+   <br />
+   <br />
+   
+   
+    <A HREF="#FusionGAN">FusionGAN: A generative adversarial network for infrared and visible image fusion</A> 
+   <br />
 
   
 </div>
 
 <body>
 
-<!-- =================================== PanGAN(2020.4) ======================================= -->
+
+<!-- =================================== Sky Transfer (2020.4-2020.5) ======================================= -->
+<!-- === Home Section Starts === -->
+<div class="section">
+  <!-- === Title Starts === -->
+  <div class="header">
+    <div class="logo">
+      <a href="https://yuwei998.github.io/" target="_blank"><img src="./assets/log.jpg"></a>
+    </div>
+    <div class="title", style="padding-top: 25pt;">  <!-- Set padding as 10 if title is with two lines. -->
+      <A NAME="Sky"><h2>Sky Transfer</h2></A>
+    </div>
+    <div class="title", style="padding-top: 5pt;">    <!-- Set padding as 10 if title is with two lines. -->
+      <font size=5> 2020.4 - 2020.5</font>
+    </div>
+  </div>
+  <!-- === Title Ends === -->
+
+  <div class="teaser">
+    <img src="./showimg/sky_result_1.jpg">
+  </div>
+  <div class="teaser">
+    <img src="./showimg/sky_result_2.jpg">
+  </div>
+
+</div>
+<!-- === Home Section Ends === -->
+
+
+<!-- === Overview Section Starts === -->
+<div class="section">
+  <div class="title">Overview</div>
+  <div class="body">
+
+    blul sky transfer to dusk sky.
+    <br />
+
+    AI auto generate sky for sky transfer.
+  </div>
+</div>
+<!-- === Overview Section Ends === -->
+
+
+<!-- =================================== PanGAN(2018.9-2020.4) ======================================= -->
 <!-- === Home Section Starts === -->
 <div class="section">
   <!-- === Title Starts === -->
@@ -91,8 +148,124 @@
 <!-- === Result Section Ends === -->
 
 
+<!-- =================================== FocalGAN(2019.7-2020-2) ======================================= -->
+<!-- === Home Section Starts === -->
+<div class="section">
+  <!-- === Title Starts === -->
+  <div class="header">
+    <div class="logo">
+      <a href="https://yuwei998.github.io/" target="_blank"><img src="./assets/log.jpg"></a>
+    </div>
+    <div class="title", style="padding-top: 25pt;">  <!-- Set padding as 10 if title is with two lines. -->
+      <A NAME="FocalGAN"><h2>FocalGAN</h2></A>
+    </div>
+    <div class="title", style="padding-top: 5pt;">    <!-- Set padding as 10 if title is with two lines. -->
+      <font size=5> 2019.7 - 2020.2</font>
+    </div>
+  </div>
+  <!-- === Title Ends === -->
+  <div class="link">
+    <a href="https://static.ai-challenger.com/file/Simultaneous%20Brain%20Anatomical%20and%20Arterial%20Imaging%20by%203T%20MRI.pdf" target="_blank">[Paper]</a>&nbsp;
+  </div>
+  <div class="teaser">
+    <img src="./showimg/FocalGAN_ill.jpg">
+  </div>
+</div>
+<!-- === Home Section Ends === -->
 
-<!-- =================================== FusionGAN(2019.4) ======================================= -->
+
+<!-- === Overview Section Starts === -->
+<div class="section">
+  <div class="title">Overview</div>
+  <div class="body">
+    This study investigates a reconstruction method designed to generate 7T magnetic resonance images (MRI) from 3T MRI
+    based on a generative adversarial network. Compared with current reconstruction methods, this method can
+    simultaneously reconstruct well-defined anatomical details and salient blood vessels. This reconstruction method may
+    be useful for increasing the efficiency of brain MRI examinations.
+  </div>
+</div>
+<!-- === Overview Section Ends === -->
+
+
+<!-- === Result Section Starts === -->
+<div class="section">
+  <div class="title">Results</div>
+  <div class="body">
+
+    <!-- Adjust the number of rows and columns (EVERY project differs). -->
+
+    Results of 7T MRI reconstruction using FocalGAN on two testing pairs shown in coronal view. 3T MRI (A) is the input, 7T MRI (B) is the reference, Out (C) designates the reconstruction generated by FocalGAN, error maps (D) are shown in the rightmost column. Regions outlined in red are expanded beneath the relevant panel (E-G).
+    <table width="100%" style="margin: 20pt 0; text-align: center;">
+      <tr>
+        <td><img src="./showimg/FocalGAN_result_1.jpg" width="90%"></td>
+      </tr>
+    </table>
+
+    Maximal intensity projection (MIP) images show improved imaging of blood vessel reconstruction in two test pairs. 7T MRI MIP (A) refers to reference images, Out MIP (B) designates results generated using FocalGAN.
+    <table width="100%" style="margin: 20pt 0; text-align: center;">
+      <tr>
+        <td><img src="./showimg/FocalGAN_result_2.jpg" width="90%"></td>
+      </tr>
+    </table>
+
+    Transferring FocalGAN to domain transfer. Before segmentation, We transfer 3T MRI to 1.5T MRI, which can greatly improve the robust of our segmentation model (<b><font color="#FF0000">10%</font></b> improvements).
+
+    <table width="100%" style="margin: 20pt 0; text-align: center;">
+      <tr>
+        <td><img src="./showimg/FocalGAN_result_3.jpg" width="90%"></td>
+      </tr>
+    </table>
+
+
+    </div>
+  </div>
+</div>
+<!-- === Result Section Ends === -->
+
+
+<!-- =================================== Denoise(2019.11-2019-12) ======================================= -->
+<!-- === Home Section Starts === -->
+<div class="section">
+  <!-- === Title Starts === -->
+  <div class="header">
+    <div class="logo">
+      <a href="https://yuwei998.github.io/" target="_blank"><img src="./assets/log.jpg"></a>
+    </div>
+    <div class="title", style="padding-top: 25pt;">  <!-- Set padding as 10 if title is with two lines. -->
+      <A NAME="Denoise"><h2>MRI/CT Denoise</h2></A>
+    </div>
+    <div class="title", style="padding-top: 5pt;">    <!-- Set padding as 10 if title is with two lines. -->
+      <font size=5> 2019.11 - 2020.12</font>
+    </div>
+  </div>
+  <!-- === Title Ends === -->
+  MRI Denoise
+  <div class="teaser">
+    <img src="./showimg/denoise_result_1.jpg">
+  </div>
+
+  CT Denoise
+  <div class="teaser">
+    <img src="./showimg/Denoise_result_2.jpg">
+  </div>
+</div>
+<!-- === Home Section Ends === -->
+
+
+<!-- === Overview Section Starts === -->
+<div class="section">
+  <div class="title">Overview</div>
+  <div class="body">
+    MRI denoise in a supervised way using dncnn.
+    <br />
+    CT denoise in an unsupervised way using cyclegan.
+  </div>
+</div>
+<!-- === Overview Section Ends === -->
+
+
+
+<!-- =================================== FusionGAN(2018.5-2019.4) ======================================= -->
 <!-- === Home Section Starts === -->
 <div class="section">
   <!-- === Title Starts === -->
